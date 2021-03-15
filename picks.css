@@ -1,0 +1,97 @@
+html {
+	font-family: "Inter", "sans-serif";
+}
+
+#picks-container {
+	display: flex;
+	width: 900px;
+	color: #bbb;
+	margin: 2em auto;
+	justify-content: center;
+}
+
+#info-container {
+	margin-left: 1em;
+}
+
+#point-list-container,
+#data-container {
+	position: relative;
+	padding: 1em;
+	border: 1px solid #ccc;
+	width: 240px;
+	box-sizing: border-box;
+	margin: 1em 0;
+}
+
+#point-list-container::before,
+#data-container::before {
+	display: block;
+	position: absolute;
+	top: -0.5em;
+	line-height: 1em;
+	background-color: white;
+	padding: 0 0.5em;
+	letter-spacing: 0.2em;
+	font-size: 0.8em;
+}
+
+#point-list-container::before {
+	content: "POINT LIST"
+}
+
+#data-container::before {
+	content: "DATA"
+}
+
+textarea {
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+	padding: 1em;
+	resize: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+ul {
+	padding-left: 1.5em;
+}
+
+li {
+	font-size: 0.8em;
+}
+
+li span {
+	color: #333;
+}
+
+.button-group .button {
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff;
+	font-size: 0.8em;
+	width: 100%;
+	border: 0;
+	padding: 0.5em;
+}
+
+.button-group .button + .button {
+	margin-top: 1px;
+}
+
+.button-group .button[disabled]{
+	opacity: 0.5;
+}
+
+#point-list-button       { background-color: #b8bb26; }
+#point-list-button:hover { background-color: #989b16; }
+#split-toggle-button       { background-color: #fabd2f; }
+#split-toggle-button:hover { background-color: #da9d1f; }
+#inside-toggle-button       { background-color: #fb4934; }
+#inside-toggle-button:hover { background-color: #cc241d; }
+#draw-button       { background-color: #83a598; }
+#draw-button:hover { background-color: #739588; }
+#github-button       { background-color: #333; }
+#github-button:hover { background-color: #222; }
+

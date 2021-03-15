@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="picks.css">
+	</head>
+	<body>
+		<div id="picks-container">
+			<canvas id="picks-canvas" width="600" height="600"></canvas>
+			<div id="info-container">
+				<div id="point-list-container">
+					<textarea id="point-list" placeholder="1,2&#10;2,3"></textarea>
+				</div>
+				<div id="data-container">
+					<ul>
+						<li>inner: <span id="inner-count"></span></li>
+						<li>boundary: <span id="boundary-count"></span></li>
+						<li>triangles: <span id="triangle-count"></span></li>
+						<li>area: <span id="area-count"></span></li>
+					</ul>
+				</div>
+				<div class="button-group">
+					<button class="button" id="draw-button">draw</button>
+					<button class="button" id="point-list-button">update</button>
+					<button class="button" id="split-toggle-button">toggle split</button>
+					<button class="button" id="inside-toggle-button">toggle inside</button>
+					<a class="button" id="github-button" href="https://github.com/yjp20/picks">Github</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="picks.js"></script>
+</html>
